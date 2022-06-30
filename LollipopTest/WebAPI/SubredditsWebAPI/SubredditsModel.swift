@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct Subreddits: Decodable {
+struct SubredditsModel: Decodable {
     let data: Data
 }
 
-extension Subreddits {
+extension SubredditsModel {
     struct Data: Decodable {
         let children: [Children]
     }
 }
 
-extension Subreddits.Data {
+extension SubredditsModel.Data {
     struct Children: Decodable {
         struct Data: Decodable {
             let display_name: String
