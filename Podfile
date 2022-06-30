@@ -12,4 +12,7 @@ target 'LollipopTest' do
   pod 'RxRelay'
   pod 'NSObject+Rx'
 
+  # DB
+  pod 'RealmSwift', '~>10'
+
 end
