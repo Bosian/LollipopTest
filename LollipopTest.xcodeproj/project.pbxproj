@@ -8,8 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		19947EF9240CD3CB57EDCD7C /* Pods_LollipopTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7595C49F7A42CEBE9E47E1B0 /* Pods_LollipopTest.framework */; };
+		960E699A286A099500193146 /* DetailNavigationParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E6999286A099500193146 /* DetailNavigationParameter.swift */; };
+		960E699D286A0AE400193146 /* WebAPIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E699C286A0AE400193146 /* WebAPIProtocols.swift */; };
+		960E699F286A0C7700193146 /* HTTPGet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E699E286A0C7700193146 /* HTTPGet.swift */; };
+		960E69A1286A0D9B00193146 /* SubredditsParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960E69A0286A0D9B00193146 /* SubredditsParameter.swift */; };
+		961EB489286BF783003AD95C /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961EB488286BF783003AD95C /* FavoriteManager.swift */; };
+		967C354D286A01C0005CD59D /* HotWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C354C286A01C0005CD59D /* HotWebAPI.swift */; };
+		967C354F286A01D4005CD59D /* HotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C354E286A01D4005CD59D /* HotModel.swift */; };
+		967C3551286A0427005CD59D /* HotParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C3550286A0427005CD59D /* HotParameter.swift */; };
+		967C3553286A0678005CD59D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C3552286A0678005CD59D /* DetailViewModel.swift */; };
+		967C3558286A069B005CD59D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C3557286A069B005CD59D /* DetailViewController.swift */; };
+		967C355A286A06A7005CD59D /* DetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 967C3559286A06A7005CD59D /* DetailStoryboard.storyboard */; };
+		967C355C286A06B4005CD59D /* DetailViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C355B286A06B4005CD59D /* DetailViewControllerPreview.swift */; };
+		967C3562286A0723005CD59D /* DetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C3561286A0723005CD59D /* DetailCellViewModel.swift */; };
+		967C3564286A072C005CD59D /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C3563286A072C005CD59D /* DetailCell.swift */; };
 		96AC94732869DC8A00C2E283 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC94722869DC8A00C2E283 /* GalleryCell.swift */; };
 		96AC94752869DCBC00C2E283 /* GalleryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC94742869DCBC00C2E283 /* GalleryCellViewModel.swift */; };
+		96AFF878286DD9B800E7CECE /* FavoriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AFF877286DD9B800E7CECE /* FavoriteModel.swift */; };
+		96DE4CBD286D33B9001026D2 /* FavoriteStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96DE4CBC286D33B9001026D2 /* FavoriteStoryboard.storyboard */; };
+		96DE4CBF286D33C8001026D2 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE4CBE286D33C8001026D2 /* FavoriteViewController.swift */; };
+		96DE4CC1286D33D8001026D2 /* FavoriteViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE4CC0286D33D8001026D2 /* FavoriteViewControllerPreview.swift */; };
+		96DE4CC4286D33EC001026D2 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE4CC3286D33EC001026D2 /* FavoriteViewModel.swift */; };
+		96DE4CC8286D45DF001026D2 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96DE4CC7286D45DF001026D2 /* DetailCell.xib */; };
+		96DE4CCA286D62B8001026D2 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DE4CC9286D62B8001026D2 /* EncodableExtension.swift */; };
 		96F3CC342869D41600DC0C16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC332869D41600DC0C16 /* AppDelegate.swift */; };
 		96F3CC362869D41600DC0C16 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC352869D41600DC0C16 /* SceneDelegate.swift */; };
 		96F3CC3B2869D41600DC0C16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F3CC392869D41600DC0C16 /* Main.storyboard */; };
@@ -21,7 +42,7 @@
 		96F3CC612869D8D500DC0C16 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC542869D8D500DC0C16 /* UIViewControllerExtension.swift */; };
 		96F3CC642869D8D500DC0C16 /* DecodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC572869D8D500DC0C16 /* DecodableExtension.swift */; };
 		96F3CC652869D8D500DC0C16 /* SubredditsWebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC5A2869D8D500DC0C16 /* SubredditsWebAPI.swift */; };
-		96F3CC662869D8D500DC0C16 /* Subreddits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC5B2869D8D500DC0C16 /* Subreddits.swift */; };
+		96F3CC662869D8D500DC0C16 /* SubredditsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC5B2869D8D500DC0C16 /* SubredditsModel.swift */; };
 		96F3CC672869D8D500DC0C16 /* ParameterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC5D2869D8D500DC0C16 /* ParameterDelegate.swift */; };
 		96F3CC682869D8D500DC0C16 /* DataContextProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC5E2869D8D500DC0C16 /* DataContextProtocol.swift */; };
 		96F3CC692869D8D500DC0C16 /* Navigatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3CC5F2869D8D500DC0C16 /* Navigatable.swift */; };
@@ -32,8 +53,30 @@
 /* Begin PBXFileReference section */
 		1F01307FA79AF5CA9078FAA4 /* Pods-LollipopTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LollipopTest.release.xcconfig"; path = "Target Support Files/Pods-LollipopTest/Pods-LollipopTest.release.xcconfig"; sourceTree = "<group>"; };
 		7595C49F7A42CEBE9E47E1B0 /* Pods_LollipopTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LollipopTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		960E6999286A099500193146 /* DetailNavigationParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigationParameter.swift; sourceTree = "<group>"; };
+		960E699C286A0AE400193146 /* WebAPIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIProtocols.swift; sourceTree = "<group>"; };
+		960E699E286A0C7700193146 /* HTTPGet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPGet.swift; sourceTree = "<group>"; };
+		960E69A0286A0D9B00193146 /* SubredditsParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditsParameter.swift; sourceTree = "<group>"; };
+		961EB488286BF783003AD95C /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
+		967C354C286A01C0005CD59D /* HotWebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotWebAPI.swift; sourceTree = "<group>"; };
+		967C354E286A01D4005CD59D /* HotModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotModel.swift; sourceTree = "<group>"; };
+		967C3550286A0427005CD59D /* HotParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotParameter.swift; sourceTree = "<group>"; };
+		967C3552286A0678005CD59D /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		967C3557286A069B005CD59D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		967C3559286A06A7005CD59D /* DetailStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DetailStoryboard.storyboard; sourceTree = "<group>"; };
+		967C355B286A06B4005CD59D /* DetailViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewControllerPreview.swift; sourceTree = "<group>"; };
+		967C3561286A0723005CD59D /* DetailCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailCellViewModel.swift; path = "LollipopTest/New Group/Gallery/Detail/Cell/New Group/ViewModel/DetailCellViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		967C3563286A072C005CD59D /* DetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
 		96AC94722869DC8A00C2E283 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
 		96AC94742869DCBC00C2E283 /* GalleryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GalleryCellViewModel.swift; path = "LollipopTest/New Group/Gallery/Cell/View/GalleryCellViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		96AFF875286DD6FB00E7CECE /* LollipopTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LollipopTest.entitlements; sourceTree = "<group>"; };
+		96AFF877286DD9B800E7CECE /* FavoriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteModel.swift; sourceTree = "<group>"; };
+		96DE4CBC286D33B9001026D2 /* FavoriteStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FavoriteStoryboard.storyboard; sourceTree = "<group>"; };
+		96DE4CBE286D33C8001026D2 /* FavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		96DE4CC0286D33D8001026D2 /* FavoriteViewControllerPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewControllerPreview.swift; sourceTree = "<group>"; };
+		96DE4CC3286D33EC001026D2 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
+		96DE4CC7286D45DF001026D2 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		96DE4CC9286D62B8001026D2 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		96F3CC302869D41600DC0C16 /* LollipopTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LollipopTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F3CC332869D41600DC0C16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F3CC352869D41600DC0C16 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,7 +90,7 @@
 		96F3CC542869D8D500DC0C16 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		96F3CC572869D8D500DC0C16 /* DecodableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodableExtension.swift; sourceTree = "<group>"; };
 		96F3CC5A2869D8D500DC0C16 /* SubredditsWebAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubredditsWebAPI.swift; sourceTree = "<group>"; };
-		96F3CC5B2869D8D500DC0C16 /* Subreddits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subreddits.swift; sourceTree = "<group>"; };
+		96F3CC5B2869D8D500DC0C16 /* SubredditsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubredditsModel.swift; sourceTree = "<group>"; };
 		96F3CC5D2869D8D500DC0C16 /* ParameterDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterDelegate.swift; sourceTree = "<group>"; };
 		96F3CC5E2869D8D500DC0C16 /* DataContextProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataContextProtocol.swift; sourceTree = "<group>"; };
 		96F3CC5F2869D8D500DC0C16 /* Navigatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigatable.swift; sourceTree = "<group>"; };
@@ -75,6 +118,104 @@
 				1F01307FA79AF5CA9078FAA4 /* Pods-LollipopTest.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		960E6998286A099100193146 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				960E6999286A099500193146 /* DetailNavigationParameter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		960E699B286A0AC900193146 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				960E699C286A0AE400193146 /* WebAPIProtocols.swift */,
+				960E699E286A0C7700193146 /* HTTPGet.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		961EB487286BF77B003AD95C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				961EB488286BF783003AD95C /* FavoriteManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		967C354B286A01AE005CD59D /* HotWebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				967C354C286A01C0005CD59D /* HotWebAPI.swift */,
+				967C3550286A0427005CD59D /* HotParameter.swift */,
+				967C354E286A01D4005CD59D /* HotModel.swift */,
+			);
+			path = HotWebAPI;
+			sourceTree = "<group>";
+		};
+		967C3554286A067E005CD59D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				967C3559286A06A7005CD59D /* DetailStoryboard.storyboard */,
+				967C3557286A069B005CD59D /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		967C3555286A067E005CD59D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				967C3552286A0678005CD59D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		967C3556286A068E005CD59D /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				967C355B286A06B4005CD59D /* DetailViewControllerPreview.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		967C355D286A06F1005CD59D /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				960E6998286A099100193146 /* Model */,
+				967C3555286A067E005CD59D /* ViewModel */,
+				967C3554286A067E005CD59D /* View */,
+				967C3556286A068E005CD59D /* Preview */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
+		967C355E286A06F3005CD59D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				967C3560286A06F5005CD59D /* ViewModel */,
+				967C355F286A06F5005CD59D /* View */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		967C355F286A06F5005CD59D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96DE4CC7286D45DF001026D2 /* DetailCell.xib */,
+				967C3563286A072C005CD59D /* DetailCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		967C3560286A06F5005CD59D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				967C3561286A0723005CD59D /* DetailCellViewModel.swift */,
+			);
+			name = ViewModel;
+			path = "New Group/ViewModel";
 			sourceTree = "<group>";
 		};
 		96AC946E2869DC6B00C2E283 /* Cell */ = {
@@ -113,6 +254,50 @@
 			path = "New Group/ViewModel";
 			sourceTree = "<group>";
 		};
+		96AFF876286DD9A400E7CECE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96AFF877286DD9B800E7CECE /* FavoriteModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96DE4CB9286D3293001026D2 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				96DE4CC5286D3434001026D2 /* Page */,
+			);
+			name = Favorite;
+			path = "New Group/Gallery/Detail/Favorite";
+			sourceTree = "<group>";
+		};
+		96DE4CBA286D32A9001026D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96DE4CBC286D33B9001026D2 /* FavoriteStoryboard.storyboard */,
+				96DE4CBE286D33C8001026D2 /* FavoriteViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96DE4CC2286D33DE001026D2 /* Preview */ = {
+			isa = PBXGroup;
+			children = (
+				96DE4CC0286D33D8001026D2 /* FavoriteViewControllerPreview.swift */,
+			);
+			path = Preview;
+			sourceTree = "<group>";
+		};
+		96DE4CC5286D3434001026D2 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				96F3CC472869D42800DC0C16 /* ViewModel */,
+				96DE4CBA286D32A9001026D2 /* View */,
+				96DE4CC2286D33DE001026D2 /* Preview */,
+			);
+			path = Page;
+			sourceTree = "<group>";
+		};
 		96F3CC272869D41600DC0C16 = {
 			isa = PBXGroup;
 			children = (
@@ -134,12 +319,15 @@
 		96F3CC322869D41600DC0C16 /* LollipopTest */ = {
 			isa = PBXGroup;
 			children = (
+				96AFF875286DD6FB00E7CECE /* LollipopTest.entitlements */,
+				96AFF876286DD9A400E7CECE /* Models */,
+				961EB487286BF77B003AD95C /* Managers */,
 				96F3CC532869D8D500DC0C16 /* Extensions */,
 				96F3CC5C2869D8D500DC0C16 /* Protocols */,
 				96F3CC582869D8D500DC0C16 /* WebAPI */,
 				96F3CC482869D42900DC0C16 /* Gallery */,
 				96F3CC492869D42B00DC0C16 /* Detail */,
-				96F3CC472869D42800DC0C16 /* Favorites */,
+				96DE4CB9286D3293001026D2 /* Favorite */,
 				96F3CC332869D41600DC0C16 /* AppDelegate.swift */,
 				96F3CC352869D41600DC0C16 /* SceneDelegate.swift */,
 				96F3CC392869D41600DC0C16 /* Main.storyboard */,
@@ -150,11 +338,12 @@
 			path = LollipopTest;
 			sourceTree = "<group>";
 		};
-		96F3CC472869D42800DC0C16 /* Favorites */ = {
+		96F3CC472869D42800DC0C16 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				96DE4CC3286D33EC001026D2 /* FavoriteViewModel.swift */,
 			);
-			path = Favorites;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		96F3CC482869D42900DC0C16 /* Gallery */ = {
@@ -170,6 +359,8 @@
 		96F3CC492869D42B00DC0C16 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				967C355D286A06F1005CD59D /* Page */,
+				967C355E286A06F3005CD59D /* Cell */,
 			);
 			name = Detail;
 			path = "New Group/Gallery/Detail";
@@ -205,6 +396,7 @@
 			children = (
 				96F3CC542869D8D500DC0C16 /* UIViewControllerExtension.swift */,
 				96F3CC572869D8D500DC0C16 /* DecodableExtension.swift */,
+				96DE4CC9286D62B8001026D2 /* EncodableExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,18 +404,21 @@
 		96F3CC582869D8D500DC0C16 /* WebAPI */ = {
 			isa = PBXGroup;
 			children = (
-				96F3CC592869D8D500DC0C16 /* Model */,
+				960E699B286A0AC900193146 /* Protocols */,
+				96F3CC592869D8D500DC0C16 /* SubredditsWebAPI */,
+				967C354B286A01AE005CD59D /* HotWebAPI */,
 			);
 			path = WebAPI;
 			sourceTree = "<group>";
 		};
-		96F3CC592869D8D500DC0C16 /* Model */ = {
+		96F3CC592869D8D500DC0C16 /* SubredditsWebAPI */ = {
 			isa = PBXGroup;
 			children = (
 				96F3CC5A2869D8D500DC0C16 /* SubredditsWebAPI.swift */,
-				96F3CC5B2869D8D500DC0C16 /* Subreddits.swift */,
+				960E69A0286A0D9B00193146 /* SubredditsParameter.swift */,
+				96F3CC5B2869D8D500DC0C16 /* SubredditsModel.swift */,
 			);
-			path = Model;
+			path = SubredditsWebAPI;
 			sourceTree = "<group>";
 		};
 		96F3CC5C2869D8D500DC0C16 /* Protocols */ = {
@@ -306,8 +501,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96F3CC4D2869D49700DC0C16 /* GalleryStoryboard.storyboard in Resources */,
+				96DE4CBD286D33B9001026D2 /* FavoriteStoryboard.storyboard in Resources */,
 				96F3CC402869D41900DC0C16 /* LaunchScreen.storyboard in Resources */,
 				96F3CC3D2869D41900DC0C16 /* Assets.xcassets in Resources */,
+				96DE4CC8286D45DF001026D2 /* DetailCell.xib in Resources */,
+				967C355A286A06A7005CD59D /* DetailStoryboard.storyboard in Resources */,
 				96F3CC3B2869D41600DC0C16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,20 +559,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960E69A1286A0D9B00193146 /* SubredditsParameter.swift in Sources */,
 				96F3CC692869D8D500DC0C16 /* Navigatable.swift in Sources */,
-				96F3CC662869D8D500DC0C16 /* Subreddits.swift in Sources */,
+				96F3CC662869D8D500DC0C16 /* SubredditsModel.swift in Sources */,
 				96F3CC4F2869D54F00DC0C16 /* GalleryViewController.swift in Sources */,
+				967C3562286A0723005CD59D /* DetailCellViewModel.swift in Sources */,
 				96F3CC612869D8D500DC0C16 /* UIViewControllerExtension.swift in Sources */,
+				96DE4CC4286D33EC001026D2 /* FavoriteViewModel.swift in Sources */,
 				96F3CC652869D8D500DC0C16 /* SubredditsWebAPI.swift in Sources */,
 				96F3CC342869D41600DC0C16 /* AppDelegate.swift in Sources */,
+				96AFF878286DD9B800E7CECE /* FavoriteModel.swift in Sources */,
 				96F3CC672869D8D500DC0C16 /* ParameterDelegate.swift in Sources */,
+				967C3558286A069B005CD59D /* DetailViewController.swift in Sources */,
+				967C3564286A072C005CD59D /* DetailCell.swift in Sources */,
+				967C355C286A06B4005CD59D /* DetailViewControllerPreview.swift in Sources */,
+				96DE4CCA286D62B8001026D2 /* EncodableExtension.swift in Sources */,
+				967C3553286A0678005CD59D /* DetailViewModel.swift in Sources */,
 				96F3CC522869D56000DC0C16 /* GalleryViewControllerPreview.swift in Sources */,
 				96F3CC682869D8D500DC0C16 /* DataContextProtocol.swift in Sources */,
+				961EB489286BF783003AD95C /* FavoriteManager.swift in Sources */,
+				960E699A286A099500193146 /* DetailNavigationParameter.swift in Sources */,
+				960E699D286A0AE400193146 /* WebAPIProtocols.swift in Sources */,
+				96DE4CBF286D33C8001026D2 /* FavoriteViewController.swift in Sources */,
 				96F3CC362869D41600DC0C16 /* SceneDelegate.swift in Sources */,
 				96F3CC6A2869D8D500DC0C16 /* Viewer.swift in Sources */,
+				967C3551286A0427005CD59D /* HotParameter.swift in Sources */,
+				967C354F286A01D4005CD59D /* HotModel.swift in Sources */,
 				96AC94732869DC8A00C2E283 /* GalleryCell.swift in Sources */,
 				96F3CC6C2869D92300DC0C16 /* GalleryViewModel.swift in Sources */,
+				96DE4CC1286D33D8001026D2 /* FavoriteViewControllerPreview.swift in Sources */,
+				967C354D286A01C0005CD59D /* HotWebAPI.swift in Sources */,
 				96F3CC642869D8D500DC0C16 /* DecodableExtension.swift in Sources */,
+				960E699F286A0C7700193146 /* HTTPGet.swift in Sources */,
 				96AC94752869DCBC00C2E283 /* GalleryCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +737,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LollipopTest/LollipopTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8W6454B7RN;
@@ -550,6 +767,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LollipopTest/LollipopTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8W6454B7RN;
