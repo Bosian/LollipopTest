@@ -26,7 +26,7 @@ extension HotModel {
 
 extension HotModel.Data {
     struct Children: Decodable {
-        struct Data: Decodable, Encodable, Equatable {
+        struct Data: Decodable, Equatable {
             
             /// e.g. "Gaming"
             let subreddit: String

@@ -8,12 +8,16 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import RealmSwift
 
 final class FavoriteManager {
     
     static let shared: FavoriteManager = FavoriteManager()
-    
+
     let favorites: BehaviorRelay<[FavoriteModel]> = BehaviorRelay<[FavoriteModel]>(value: [])
+
+    // Open the local-only default realm
+    private let realm = try! Realm()
     
     /// 避免 一開始被寫入 empty array
     private var isDataLoaded: Bool = false
@@ -21,7 +25,6 @@ final class FavoriteManager {
     /// 避免 SwiftUI preview 無法將Item加入最愛
     private let userDefault: UserDefaults? = UserDefaults(suiteName: "group.lolipopTest")
 
-    private let key: String = "favorites"
     private let disposeBag: DisposeBag = DisposeBag()
     
     private init() {
@@ -58,7 +61,7 @@ final class FavoriteManager {
             var value = favorites.value
             
             value.removeAll { (item: FavoriteModel) in
-                return item.model.id == model.id
+                return item.id == model.id
             }
             
             favorites.accept(value)
@@ -74,17 +77,21 @@ final class FavoriteManager {
     
     func isFavorite(model: HotModel.Data.Children.Data) -> Bool {
         return favorites.value.contains { (item: FavoriteModel) in
-            return item.model.id == model.id
+            return item.id == model.id
         }
     }
     
     private func save(models: [FavoriteModel]) {
-        guard let data: Data = try? models.toData() else {
+
+        do {
+            // Save to realm
+            try realm.write {
+                realm.add(models)
+            }
+        } catch {
             assert(false)
-            return
+            print(String(describing: error))
         }
-        
-        userDefault?.set(data, forKey: key)
     }
     
     private func load() {
@@ -94,18 +101,8 @@ final class FavoriteManager {
             isDataLoaded = true
         }
 
-        guard let data: Data = userDefault?.data(forKey: key) else {
-            return
-        }
-        
-        let models: [FavoriteModel] = {
-            guard let models: [FavoriteModel] = try? [FavoriteModel](data: data) else {
-                return []
-            }
-            
-            return models
-        }()
-        
-        favorites.accept(models)
+        // Load from realm
+        let obj: Results<FavoriteModel> = realm.objects(FavoriteModel.self)
+        favorites.accept(Array(obj))
     }
 }
