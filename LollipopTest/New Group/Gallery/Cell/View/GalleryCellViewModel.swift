@@ -6,5 +6,5 @@
 //
 
 struct GalleryCellViewModel {
-    let model: Subreddits.Data.Children.Data
+    let model: SubredditsModel.Data.Children.Data
 }

@@ -11,7 +11,7 @@ import RxCocoa
 final class GalleryViewModel {
     let cellViewModels: BehaviorRelay<[GalleryCellViewModel]> = BehaviorRelay<[GalleryCellViewModel]>(value: [])
 
-    private var model: Subreddits? {
+    private var model: SubredditsModel? {
         didSet {
 
             guard let model = model else {
@@ -42,7 +42,7 @@ final class GalleryViewModel {
         
     }
     
-    private func callWebAPI() async throws -> Subreddits {
-        return try await SubredditsWebAPI().invokeAsync()
+    private func callWebAPI() async throws -> SubredditsModel {
+        return try await SubredditsWebAPI().invokeAsync(SubredditsParameter())
     }
 }

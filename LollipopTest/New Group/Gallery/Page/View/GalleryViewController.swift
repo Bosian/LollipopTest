@@ -29,6 +29,12 @@ final class GalleryViewController: UIViewController, Viewer {
         
         viewModel = ViewModelType()
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        handlePrepare(for: segue, sender: sender)
+    }
 }
 
 extension GalleryViewController: UITableViewDelegate, UITableViewDataSource
@@ -48,5 +54,12 @@ extension GalleryViewController: UITableViewDelegate, UITableViewDataSource
         cell.dataContext = viewModel.cellViewModels.value[indexPath.row]
         
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let navigationParameter = DetailNavigationParameter(model: viewModel.cellViewModels.value[indexPath.row].model)
+        performSegue(withIdentifier: "\(DetailViewController.self)", sender: navigationParameter)
     }
 }

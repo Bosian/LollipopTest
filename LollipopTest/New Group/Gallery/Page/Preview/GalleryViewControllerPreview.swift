@@ -11,18 +11,15 @@ import SwiftUI
 struct GalleryViewControllerPreview: UIViewRepresentable {
 
     let viewController: UIViewController
-    let view: UIView
 
     init() {
         let storyboard = UIStoryboard(name: "GalleryStoryboard", bundle: Bundle.main)
         let viewController = storyboard.instantiateInitialViewController()!
         self.viewController = viewController
-        self.view = viewController.view
-        viewController.view.backgroundColor = .orange
     }
 
     func makeUIView(context: Context) -> some UIView {
-        return view
+        return viewController.view
     }
     
     func updateUIView(_ uiView: UIViewType, context: Context) {
