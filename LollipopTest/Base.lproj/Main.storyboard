@@ -58,7 +58,7 @@
         <!--圖片集-->
         <scene sceneID="zF4-mO-bHq">
             <objects>
-                <viewControllerPlaceholder storyboardName="GalleryStoryboard" id="tTR-Dt-fke" userLabel="圖片集" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="FavoriteStoryboard" id="tTR-Dt-fke" userLabel="圖片集" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="6ww-qO-zU5"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BmP-ed-XOl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
